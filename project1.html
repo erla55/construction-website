@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            outline: 0px;
+        
+         
+        }
+        .navbar {
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+    .n1{
+        position: fixed;
+            top: 0%;
+            left: 0%;
+            z-index: 2;    
+    }
+        .nav2{
+            width: 75%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .b1:hover{
+            color: lightsalmon;
+
+        }
+        .nav1{
+            width: 25%;
+            height: 15vh;
+            background-color: rgb(48, 37, 22);
+            display: flex;
+            align-items: center;
+            justify-content: baseline;
+            padding-top: 8px;
+        }
+        .nav1 p{
+            padding-left: 10px;
+            padding-bottom: 20px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            -webkit-box-reflect: below 1px linear-gradient(transparent,black);
+            outline: none;
+            font-weight: 500;
+            line-height: 20px;
+            animation: log 5s linear infinite;           
+        }
+        @keyframes log {
+            0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+                color:rgb(197, 205, 226);
+                text-shadow: none;
+            }
+            18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+                color: white;
+                text-shadow: 0 0 10px #03bcf4,
+                0 0 20px #03bcf4,
+                0 0 40px #03bcf4,
+                0 0 80px #03bcf4,
+                0 0 160px #03bcf4,
+                0 0 320px #03bcf4,
+                0 0 740px #03bcf4
+            }
+        }
+        .nav2{
+            background-color: gainsboro;
+            background-color: aqua;
+            font-family: cursive;
+        }
+        .nav1 img{
+            width: 70px;
+            height: 50px;
+        }
+        .nimg{
+            position: absolute;
+            top: 15px;
+            left: 170px;
+        }
+      .con-1{
+        width:100%;
+        height: 100vh;
+        animation: bimg 5s ease infinite;
+        opacity: 0.8;
+      }
+      @keyframes bimg {
+        0%{
+            background: url("15.jpg");
+            background-size: 100% 100%;
+       
+        }
+        50%{
+            background: url("12.jpg");
+            background-size: 100% 100%; 
+        }
+        100%{
+            background: url("13.jpg");
+            background-size: 100% 100%;
+        }  
+      }
+      .con-1{
+        position: relative;
+      }
+      .con-1 div{
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        color: white;
+        font-size: 60px;
+        word-spacing: 10px;
+        font-weight: 200;   
+        font-family: 'Geologica', sans-serif;
+      }
+      .con-2{
+        box-sizing: border-box;
+        width: 100%;
+        height: 20vh;
+        background-color:whitesmoke ;
+        font-size: 60px;
+        font-family: monospace;
+        align-content: center;
+        position: relative;
+        padding-top: 20px; 
+      }
+      .con-2 div{
+        position: absolute;
+        left: 40%;
+      }
+      .line{
+        position: absolute;
+        width: 0%;
+        left: 50%;
+        transition: all 2s;
+        height: 3px;
+        background-color: orange;
+      }
+      .con-2 div:hover .line{
+        width: 100%;
+        left: 0%;
+      }
+      .con-3{
+        width: 100%;
+        display: flex;
+        height: 100vh;
+        gap: 30px;
+        justify-content: space-around;
+        box-sizing: border-box;
+        padding: 0px 20px;
+      }
+      .con-3 div{
+        height: 500px;
+        width: 30%;
+        background-color:lightyellow;
+      }
+      .con-3 img{
+        width: 100%;
+        height: 210px;
+      }
+      .con-3 h1{
+        font-size: 25px;
+        font-family: cursive;
+        padding-left: 10px;
+      }
+    .con-3 p{
+        font-size: 15px;
+        text-align:justify ;
+        padding: 1px 8px;
+        text-indent: 10px;
+        font-family: 'Edu SA Beginner', cursive;   
+    }
+    .con-4{
+        width: 100%;
+        height: 100vh;   
+    }
+    .con-4 .about{
+        font-size: 50px;
+        font-weight: 20px;
+        font-family: 'Roboto', sans-serif;
+        padding-left: 40PX; 
+        text-decoration: underline;   
+    }
+    .about1{
+        display: flex;
+        justify-content: space-between; 
+    }
+    .ab1{
+        width: 50%;
+        word-spacing: 8px;
+        padding-left: 10px;
+        padding-top: 20px;
+        text-align: justify;
+        font-family: 'Nunito', sans-serif;
+        padding-right: 10px;
+    }
+    .ab2{
+        width: 45%;
+    }
+    .ab2 video{
+        width: 450px;
+        height: 400px;
+        padding-left:0px ;
+        background-color:black ;
+        padding-right: 0px;
+    }
+    source{
+        height: 400px;
+    }
+    .con-5{
+        width: 100%;
+        height: 30vh;
+    }
+    .con-5 .projects{
+        display: flex;
+        font-size: 50px;
+        justify-content: center;
+        padding-top: 50px;
+        text-decoration: underline;
+        font-family: 'Noto Sans JP', sans-serif;   
+    }
+    .con-6{
+        display: flex;  
+    }
+    .project1{
+        display: none;
+    }
+    .con-6 img:hover {
+        opacity: 0.5;
+    
+    }
+    .con61 {
+        width: 50%;
+        display: block;
+        
+    }
+    .con62 {
+        box-sizing: border-box;
+        width: 50%;
+       display: block;
+      
+    }
+    .con61 img{
+        box-sizing: border-box;
+        width: 88vh;
+        height: 65vh;
+        padding-bottom: 20px;
+        padding-left: 20px; 
+    }
+    .con62 img{
+        box-sizing: border-box;
+        width: 88vh;
+        height: 65vh;
+        padding-bottom: 20px;
+       
+    }
+    .nav2 div{
+        position: relative;
+    }
+    .line{
+        position: absolute;
+        width: 0%;
+        left: 50%;
+        transition: all 2s;
+        height: 2px;
+        background-color: orange;
+    }
+    .nav2 :hover .line{
+        width: 100%;
+        left: 0%;
+    }
+    .con-7{
+        box-sizing: border-box;
+        width: 100%;
+        height: 20%;
+        text-align: center;
+        padding-top: 40px;
+        padding-right: 10px;
+        font-size: 50px;
+        font-family: 'Roboto Slab', serif;
+        text-decoration: underline;
+        letter-spacing: 5px;  
+
+    }
+    .clients{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 20vh;
+    }
+    .clients div{
+        width: 17%;
+        height: 20vh;
+    }
+    .clients div img{
+        width:97% ;
+        height: 22vh;
+    }
+    .con-8{
+        box-sizing: border-box;
+        width: 100%;
+        height: 15vh;
+        text-align: center;
+        padding-top: 60px;
+        font-size: 50px;
+        text-decoration: underline;
+        letter-spacing: 5px;
+    }
+    .map iframe{
+        width: 100%;
+        height: 75vh;
+        margin-top: 50px;
+        box-sizing: border-box;
+        padding: 0% 5%;
+    }
+    .con-9{
+        width: 100%;
+        height: 10vh;
+        padding-top: 50px;
+        font-size: 35px;
+        padding-left: 15px;
+        font-style: italic;
+    }
+    .inquiries{
+        width: 100%;
+        height: 10vh;
+        padding-left: 20px;
+        word-spacing: 5px;
+    }
+    .con-10{
+        width: 100%;
+        height: 11vh;
+        font-size: 30px;
+        padding-left: 15px;
+        font-style: italic;   
+    }
+    .contact input{
+        width:35%;
+        padding-left: 20px;
+        height: 25px; 
+    }
+    .contact input:hover{
+        background-color:gainsboro;
+    }
+    .contact textarea:hover{
+        background-color: gainsboro;
+    }
+    .contact p{
+        padding-top: 10px;
+        padding-bottom: 10px;   
+    }
+    .contact{
+        box-sizing: border-box;
+        padding-left: 17px;
+    }
+     .contact textarea{
+        width: 37%;
+        height: 100px;
+     }
+     .con-11 input{
+        width: 17%;
+        height: 40px;
+        color: lemonchiffon;
+        margin-left: 210px;
+        background-color:black;  
+     }
+     .con-11 input:hover{
+        background-color: lemonchiffon;
+        color: black;
+     }
+     .con-12{
+        padding-top: 70px;
+     }
+     .con-12 footer{
+        padding-left: 20px;
+     }
+     .head1{
+        position: relative;
+
+
+     }
+     .head{
+        position: absolute;
+        top: 9%;
+        left: 50%;
+        font-style: normal;
+        font-size: 30px; 
+        padding-left: 80px; 
+     }
+     .head p{
+        font-size: 18px;
+        padding-top: 9px;
+        color: darkblue;
+        font-style: ;
+     }
+     .con-13 p{
+        padding-top: 30px;
+        font-size: 18px; 
+     }
+     .con-14 h2{
+        font-size: 30px;
+        padding-top: 80px;
+        font-style: normal;
+     }
+     .links {
+        display: flex;
+        width: 90%;
+        height: 40px;
+        justify-content: space-around;
+     }
+     .links a{
+        text-decoration: none;
+        padding-top: 50px;
+        font-size: 40px;
+     }
+    
+     
+    </style>  
+</head>
+<body>
+    <nav class="navbar n1"> 
+        <div class="nav1"><p>EKP Designs
+        </p><div class="nimg"><img src="https://th.bing.com/th/id/OIP.s6yf6h8wz7UjY3q-v7DLFgHaHa?w=151&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="imgh">
+        </div>  </div>
+        <div class="nav2">
+        <div class="b1">HOME
+            <div class="line"></div>
+        </div>    
+        <div class="b1">SERVICES
+            <div class="line"></div>
+        </div>
+        <div class="b1">ABOUT
+            <div class="line"></div>
+        </div>
+        <div class="b1">PROJECTS
+            <div class="line"></div>
+        </div>
+        <div class="b1">CONTACT
+            <div class="line"></div>
+        </div></nav>
+
+
+<div class="con-1"> 
+    <div>LEADER&apos;S IN QUALITY CONSTRUCTION AND INFRASTRUCTURE</div>
+    </div>
+<div class="con-2">
+    <div>SERVICES
+        <div class="line"></div>
+    </div>
+   
+</div>
+<div class="con-3">
+    <div><img src="pre.jpg"/>
+        <h1>Preconstruction </h1>
+        <h1>Planning</h1>
+        <p>Preconstruction planning is crucial to comprehend the entire scope of a project. Without proper preparation, your project could be delayed for months and face challenges you never foresaw.
+
+            With preconstruction planning, a contractor can save countless hours, significant funds, and valuable resources.</p>
+    </div>
+    <div><img src="arc1.jpg"/>
+        <h1>Architectural</h1>
+        <h1>Modelling</h1>
+        <p>The architectural model is a tool often used to express a building design or masterplan. The model represents architectural ideas, and can be used at all stages of design. An architectural model shows the scale and physical presence of a proposed design.</p>
+    </div>
+    <div><img src="con.jpg"/>
+        <h1>Construction</h1>
+        <h1>Management</h1>
+        <p>Construction management involves planning, budgeting, coordinat
+            ing, and supervising construction projects from start to finis
+            h. As a construction manager, you may work on various constructio
+            n projects, including buildings, roads, bridges, and other structur
+            es.</p>
+    </div>
+    </div><br><br><br>
+    <div class="con-4">
+        <div class="about">ABOUT
+            <div class="line"></div>
+        </div>
+        <div class="about1">
+        <div class="ab1"><p>Human shelters were at first very simple and perhaps lasted
+             only a few days or months. Over time, however, even temporar
+             y structures evolved into such highly refined forms as the ig
+             loo. Gradually more durable structures began to appear, partic
+             ularly after the advent of agriculture, when people began to 
+             stay in one place for long periods. The first shelters were d
+             wellings, but later other functions, such as food storage and
+              ceremony, were housed in separate buildings. Some structures
+               began to have symbolic as well as functional value, marking
+                the beginning of the distinction between architecture and 
+                building.Construction today is a significant part of industrial 
+                culture, a manifestation of its diversity and complexity and a 
+                measure of its mastery of natural forces, which can produce a 
+                widely varied built environment to serve the diverse needs of 
+                society. This article first traces the history of construction,
+                 then surveys its development at the present time. For treatment
+                  of the aesthetic considerations of building design, see 
+                  architecture. </p></div>
+                  <div class="ab2">
+                    <video autoplay muted loop>
+                        <source src="video.mp4" type="video/mp4"/>
+                    </video>
+                  </div></div>
+
+    <div class="con-5">
+        <div class="projects">PROJECTS</div>
+        <div class="line"></div>
+    </div>
+    <div class="con-6">
+        <div class="con61">
+           <img src="20.jpg" alt="image"/>
+           <img src="22.jpg" alt="image2"/>  
+        </div>
+        <div class="con62">
+            <img src="21.jpg" alt="image1"/>
+            <img src="24.jpg" alt="image3"/>
+        </div>
+    </div>
+    <div class="con-7">CLIENTS</div> 
+    <div><div class="clients">
+        <div><img src="./logo.5.webp" alt="logo"/></div>
+        <div><img src="./logo.6.jpg" alt="logo"/></div>
+        <div><img src="./logo-7.png" alt="logo"/></div>
+        <div><img src="./logo.8.png" alt="logo"/></div>
+        <div><img src="./logo.9.jpg" alt="logo"/></div>
+    </div>
+    </div>
+<div class="con-8">CONTACT   
+</div>
+<div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.365407712819!2d78.44230267289494!3d17.44221620122786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91eab079a02d%3A0x8dab2769c038c0fd!2sVector%20India%20institute!5e0!3m2!1sen!2sin!4v1686931305037!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+    <div class="head1">
+<div class="con-9">Inquiries</div>
+    <div><div class="inquiries">
+    <p>For any Inquiries,Questions or Commendations,Please</p>
+    <p>Call:123-456-7890 or Fill Out the Following form</p>
+</div>
+<div class="con-10">Contact Us</div>
+    <div><div class="contact">
+      <div><p>First Name</p>
+        <input type="text">
+        <p>Last Name</p>
+        <input type="text">
+        <p>Email</p>
+        <input type="text">
+        <p>Subject</p>
+        <input type="text">
+        <p>Message</p>
+        <textarea rows="5" cols="8"> </textarea>
+    </div>
+</div></div>
+    <div class="con-11"><input type="Submit"></div>
+
+    <div class="head">
+           <div>Head Office</div>
+           <p>Vector India Institute  274, SR Nagar Main Rd, 
+            Sanjeeva Reddy Nagar, Hyderabad, Telangana 500038</p><br>
+            <p>info@mysite.com</p>
+            <p>Tel: 123-456-7890</p>
+            <p>Fax: 123-456-7890</p><br>
+           <div class="con-13">
+              <div>Employment</div>
+              <p>To Apply for a Job With EKP Designs,Please Send a Cover Letter
+                Together with your C.V to:info@mysite.com</p><br>
+            <div class="con-14">
+                <h2>Get a quote: 123-456-7890</h2>
+            </div>
+            <div class="links">
+                <a href="https://in.linkedin.com/?original_referer=https%3A%2F%2Fwww.bing.com%2F"<i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/"<i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/"<i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/?lang=en-in"<i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/"<i class="fa-brands fa-youtube"></i></a>
+
+            </div>
+           </div>   
+        </div>
+
+    
+</div>
+
+    <div class="con-12">
+        <footer>&copy;2023 by EKP Designs.Powered and Secured by <a href="">Prashanth</a></footer>
+    </div>
+
+    
+
+
+</body>
+</html>
